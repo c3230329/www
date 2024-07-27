@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>経営情報学科</title>
+</head>
+<body>
+    <header>
+        <h2 id="title"><ruby>岐阜協立大学<rt>ぎふきょうりつだいがく</rt></ruby></h2>
+        <h3>GIFU KYORITU UNIVERSITY</h3>
+    </header>
+    <main>
+        <h1>経営情報学科</h1>
+        <div class="toha">
+            <h2>経営情報学科とは？</h2>
+            <p>経営、会計、情報の3つの分野の専門的な知識を融合させ、最新のIT技術を活用し学ぶことができる、岐阜協立大学ならではの学科です。</p>
+        <ul>
+            <li><a href="#keiei">経営とは</a></li>
+            <li><a href="#kaikei">会計とは</a></li>
+            <li><a href="#jouhou">情報とは</a></li>
+        </ul>
+        </div>
+        <div class="keiei">
+            <h3 id="keiei">経営</h3>
+            <p>企業や組織をいかに効率よく運営するかを研究する学問です。経営戦略やマーケティングについて学びます。</p>
+            <img src="images/school_sensei_kokuban_woman.png">
+        </div>
+        <div class="kaikei">
+            <h3 id="kaikei">会計</h3>
+            <p>企業を取り巻く資金の流れとその仕組みを理解します。利害関係をもつ企業外部との取引や企業内部の管理運営についての理解を深めます。</p>
+        <img src="images/zei_shinkoku.png">
+        </div>
+        <div class="jouhou">
+            <h3 id="jouhou">情報</h3>
+            <p>プログラミングの基礎から実践的なシステム開発まで学習できます。進化し続けるIT（情報テクノロジー）分野について深く学ぶことができます。</p>
+        <img src="images/computer_tokui_boy.png">
+        </div>
+        <div class="sikaku">
+            <h2>取得可能な資格一覧</h2>
+            <ul>
+                <li>教員免許状　高校（情報・商業</li>
+                <li>基本情報処理技術者試験（FE）</li>
+                <li>応用情報処理技術者試験（AP）</li>
+                <li>情報セキュリティマネジメント試験（IP）</li>
+                <li>ウェブデザイン技能検定（1・2・3級）</li>
+                <li>シスコ認定（エントリー）</li>
+                <li>Javaプログラミング能力認定試験（1・2・3級）</li>
+                <li>ファイナンシャル・プランニング技能検定（３級）</li>
+            </ul>
+        </div>
+        <div class="syuusyoku">
+            <h2>2024年3月卒業生　業種別就職先</h2>
+            <img src="images/2024_industry_3johou.png">
+        </div>
+        </main>
+</body>
+<style>
+    h1{
+        position: relative;
+        padding: 1rem 2rem;
+        border-bottom: 6px solid #094;
+    }
+    h1:before{
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 20%;
+        height: 6px;
+        content: '';
+        background: #00cc5B;
+    }
+
+    #title{margin-top: 0;}
+    body{margin: 0;}
+    header{background-color: rgb(209, 248, 204);
+            width: 100%;}
+    rt{font-size: 40%;}
+    h2{margin-bottom: 0.1%;}
+    header h3{font-size: 60%;
+        margin-top: 0%;}
+    main h1{text-align: center;}
+    .toha{border : solid 3px rgb(9, 102, 48);
+          background-color: rgb(220, 247, 216);
+          padding: 1%;
+          border-radius: 10px;
+          margin: 2%;
+        }
+    .toha ul{list-style-type: circle;
+        display: flex;}
+    .toha li{flex:1;}
+
+    .keiei{background-color: rgb(255, 236, 200);
+           padding: 1%;
+            margin: 2%;
+            box-shadow: 0 4px 8px rgba(121, 120, 120);}
+    .kaikei{background-color: rgb(248, 206, 219);
+            padding: 1%;
+            margin: 2%;
+            box-shadow: 0 4px 8px rgba(121, 120, 120);}
+    .jouhou{background-color: rgb(227, 250, 249);
+            padding: 1%;
+            margin: 2%;
+            box-shadow: 0 4px 8px rgba(121, 120, 120);}
+    .syuusyoku{margin-top: 40px;
+            text-align: center;}
+    .syuusyoku img{width: 300px;}
+    .syuusyoku h2{padding: 1rem 2rem;
+                  color: #fff;
+                  background-image: -webkit-gradient(linear, left top, right top, from(#5380fc), to(#afcbff));
+                  background-image:-webkit-linear-gradient(left, #5380fc 0%, #afcbff 100%);
+                  background-image: linear-gradient(to right, #5380fc 0%, #afcbff 100%);
+            }
+    .sikaku{margin-top: 40px;}
+    .sikaku h2{padding: 1rem 2rem;
+                  color: #fff;
+                  background-image: -webkit-gradient(linear, left top, right top, from(#5380fc), to(#afcbff));
+                  background-image:-webkit-linear-gradient(left, #5380fc 0%, #afcbff 100%);
+                  background-image: linear-gradient(to right, #5380fc 0%, #afcbff 100%);
+            }
+    .sikaku ul{list-style-type: circle;}
+</style>
+</html>
