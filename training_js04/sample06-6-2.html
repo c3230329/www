@@ -5,23 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>要素の取得と内容の変更</title>
 </head>
-
-<style>
-    .p1{
-        display: flex;
-    }
-</style>
 <body>
     <h1>座席の予約</h1>
-    <p>東京会場</p>
-    <p><span style="color: red;"><b>（予約受付中）</b></span></p>
+    <p>東京会場<span style="color: red;"><b>（予約受付中）</b></span></p>
 
 <script type="text/javascript">
     function OnButtonClick(){
         document.getElementById("button_sample").style.display = "none";
-        document.getElementById("output_sample").innerHTML += "<b>ありがとうございました。</b><br>";
-
-        document.getElementById("output_sample").innerHTML += "<b>予約済み</b>";
+        document.getElementById("output_sample").innerHTML += "ありがとうございました。<br>";
     }
 </script>
     <input type="button" id="button_sample" value="予約する" onclick="OnButtonClick()"/>
