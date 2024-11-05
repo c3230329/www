@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素の追加と削除</title>
+</head>
+<body>
+    <h1>写真の一覧</h1>
+    <p>写真をクリックすると、写真が一覧表示されます。</p>
+
+    <span id="photo">
+        <button onclick="get_photo()">写真を表示</button>
+    </span> 
+
+    <script>
+        function get_photo() {
+            // ボタンを取得し、削除
+            let photoSpan = document.getElementById('photo');
+            photoSpan.innerHTML = "";  // ボタンを削除
+
+            // 画像タグを作成
+            let img = document.createElement("img");
+            img.src = "images/photo_1.jpg";  // 画像のパスを設定
+            img.alt = "写真";  // alt属性の設定
+
+            // 画像をspanタグ内に追加
+            photoSpan.appendChild(img);
+        }
+    </script>
+</body>
+</html>
