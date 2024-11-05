@@ -15,11 +15,9 @@
 
     <script>
         function get_photo() {
-            // ボタンを取得し、削除
             let photoSpan = document.getElementById('photo');
-            photoSpan.innerHTML = "";  // ボタンを削除
+            photoSpan.innerHTML = "";  
 
-            // 画像タグを作成
             let img = document.createElement("img");
             img.src = "images/photo_1.jpg";  
             img.src = "images/photo_2.jpg";
@@ -31,7 +29,6 @@
             img.src = "images/photo_8.jpg";
             img.alt = "写真";  
 
-            // 画像をspanタグ内に追加
             photoSpan.appendChild(img);
         }
     </script>
