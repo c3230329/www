@@ -7,21 +7,27 @@
 </head>
 <body>
     <h1>人口の多い国ランキング</h1>
-
     <ol id="country">
         <li>中国</li>
         <li>インド</li>
         <li>アメリカ</li>
         <li>インドネシア</li>
     </ol>
-<button onclick="get_li()">国旗で表示</button>
-<script>
+<script type="text/javascript">
     function get_li(){
-        let list = document.querySelectorAll('li');
+        document.getElementById("button_sample").style.display = "none";
 
-        document.getElementById("li").innerHTML = d;
+        document.write('<h1>人口の多い国ランキング</h1>');
+
+        document.write('<p>1.</p>'+ '<img src="images/flag_CHN.png">');
+        document.write('<p>2.</p>'+ '<img src="images/flag_IND.png">');
+        document.write('<p>3.</p>'+ '<img src="images/flag_USA.png">');
+        document.write('<p>4.</p>'+ '<img src="images/flag_IDN.png">');
+
 
     }
 </script>
+<input type="button" id="button_sample" value="国旗で表示" onclick="get_li()"/>
+<p id="output_sample"></p>
 </body>
 </html>

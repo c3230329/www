@@ -16,7 +16,7 @@
     <script>
         function get_photo() {
             let photoSpan = document.getElementById('photo');
-            photoSpan.innerHTML = "";  
+            photoSpan.innerHTML = "";
 
             let img = document.createElement("img");
             img.src = "images/photo_1.jpg";  
@@ -29,6 +29,7 @@
             img.src = "images/photo_8.jpg";
             img.alt = "写真";  
 
+            // 画像をspanタグ内に追加
             photoSpan.appendChild(img);
         }
     </script>
