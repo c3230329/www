@@ -9,29 +9,30 @@
     <h1>写真の一覧</h1>
     <p>写真をクリックすると、写真が一覧表示されます。</p>
 
-    <span id="photo">
-        <button onclick="get_photo()">写真を表示</button>
-    </span> 
+    <div id="photo">
+        
+    </div> 
 
     <script>
         function get_photo() {
-            let photoSpan = document.getElementById('photo');
-            photoSpan.innerHTML = "";
+        
+            document.write('<h1>写真の一覧</h1>');
+            document.write('<p>以下のボタンをクリックすると、写真が一覧表示されます。</p>');
 
-            let img = document.createElement("img");
-            img.src = "images/photo_1.jpg";  
-            img.src = "images/photo_2.jpg";
-            img.src = "images/photo_3.jpg";  
-            img.src = "images/photo_4.jpg";
-            img.src = "images/photo_5.jpg";  
-            img.src = "images/photo_6.jpg";
-            img.src = "images/photo_7.jpg";  
-            img.src = "images/photo_8.jpg";
-            img.alt = "写真";  
+            document.write('<img src="images/photo_1.jpg">');
+            document.write('<img src="images/photo_2.jpg">');
+            document.write('<img src="images/photo_3.jpg">');
 
-            // 画像をspanタグ内に追加
-            photoSpan.appendChild(img);
+            document.write('<img src="images/photo_4.jpg">');
+            document.write('<img src="images/photo_5.jpg">');
+            document.write('<img src="images/photo_6.jpg">');
+            
+            document.write('<img src="images/photo_7.jpg">');
+            document.write('<img src="images/photo_8.jpg">');
+            
         }
     </script>
+<input type="button" id="button_sample" value="写真を表示" onclick="get_photo()"/>
+<p id="output_sample"></p>
 </body>
 </html>
