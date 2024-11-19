@@ -11,22 +11,21 @@
     <button id="btn" onclick="show()">ヒントを見る</button>
     <div id="message"><p>(注意)北海道は「県」ではありません。</p></div>
 
-<script>
+<script type="text/JavaScript">
+    let clickTimes = 1;
     function show(){
     let answerBox = document.getElementById('message');
-    let clickTimes = 1;
         switch(clickTimes){
             case 1:
                 document.getElementById('message').textContent = '東北地方にあります。';
                 break;
-            
             default:
                 document.getElementById('message').textContent = '答えは「岩手県」です。';
                 console.log(answerBox);
-                break;
+
             
         }
-        clickTimes = clickTimes + 1;
+        clickTimes++;
     }
     
 </script>
