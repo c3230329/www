@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の戻り値</title>
+</head>
+<style>
+    #message{
+        width: 500px;
+        padding: 15px;
+        margin: 25px 0px;
+        background-color: #FFCC99;
+    }
+</style>
+<body>
+    <h1>素数を求める</h1>
+    <p>100以下の素数をJavaScriptで求めます。</p>
+    <button onclick="show()">結果をみる</button>
+    <div id="message">ここに結果が表示されます。</div>
+
+<script>
+    function show(){
+        let text = '';
+        for(let i = 2; i <= 100; i++){
+            let flag = check(i);
+            if(flag){
+                text = text + i + '、';
+            }
+        }
+        document.getElementById('message').textContent = text;
+    }
+
+    //素数であるかチェックする関数
+    function check(num){
+        for(let j = 2; j <= num-1; j++){
+            if(num % j ==0){
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
