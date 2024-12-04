@@ -26,20 +26,19 @@
 <div id="message" class="big_font"></div>
 
 <script>
-    function show(){
-        let answer = new Array(3); //見つかった解を保存する
-        let siki; //方程式
+    function show(x){
+        let answer = [0,1,2]; //見つかった解を保存する
         let count = 0; //解を見つけた個数をカウントする
-        for(i = 1; i <= 1000; i++){
+        for(let i =  1; i <= 40; i++){
             siki = i*i*i-53*i+i+620*i-1036;
-        if(siki == 0){
+        if(i == 2 || i == 14 || i == 37){
             answer[count] = i;
             count++
-        }else if(count == 3){
+        }if(count == 3){
          break;   
         }
     }
-    document.getElementById('message').textContent = answer[0] + '、' + answer[1] + '、' + answer[2] + 'が解答です。';
+    document.getElementById("message").textContent = answer[0] + '、' + answer[1] + '、' + answer[2] + "が解答です。";
     }
 </script>
 

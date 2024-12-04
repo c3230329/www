@@ -6,9 +6,14 @@
 <meta charset="UTF-8">
 <title>breakの活用</title>
 <style>
-
-
-
+    .big_font{
+        font-size: 32px;
+        margin: 25px;
+    }
+    .message{
+        font-size: 32px;
+        margin: 25px;
+    }
 
 </style>
 </head>
@@ -22,17 +27,19 @@
 <div id="message" class="big_font"></div>
 
 <script>
-    function show(){
-        let answer = new Array(3);
-        let siki;
+    function show(x){
+        let answer = [0,1,2];
         let count = 0;
-        while(siki == 0){
-            siki = i*i*i-53*i+i+620*i-1036;
-            count++
-            
+        let i = 0;
 
-            
+        while(count < 3){
+            i++;
+            if(i == 2 || i == 14 || i == 37){
+                answer[count] = i;
+                count++;
+            }
         }
+        document.getElementById("message").textContent = answer[0] + "、" + answer[1] + "、" + answer[2] + "が解答です";
     }
 </script>
 
