@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数値の入力とエラー処理</title>
+</head>
+
+<style>
+    #message{
+        width: 500px;
+        border: solid 3px #ffc496;
+        padding: 15px;
+        margin-top: 30px;
+        background-color: #ffc496;
+        }
+</style>
+<body>
+    <h1>n～mで割り切れる数字</h1>
+    <p>1～10の好きな範囲で<br>
+       割り切れる最小の数値をJavaScriptで求めます。</p>
+    
+    <button onclick="Sitei()">範囲を指定</button>
+    <div id="message">ここに解答が表示されます。</div>
+
+<script>
+    function Sitei(){
+        let min = parseInt(prompt('範囲の最小値を1～10で入力してください'));
+        let max = parseInt(prompt('範囲の最大値を1～10で入力してください'));
+        let mm = min < max ? min : max;
+        while(true){
+        if(mm % min === 0 && mm % max === 0){
+            break;
+        }
+        mm++;
+        }
+    
+        document.getElementById('message').textContent = ( min + 'から' + max + 'で割り切れる最小の数値は' + mm + 'です');
+    }
+
+</script>
+</body>
+</html>
